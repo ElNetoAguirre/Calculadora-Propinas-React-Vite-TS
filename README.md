@@ -12,9 +12,9 @@
   </p>
 </div>
 
-# Calculadora de Propinas - React + Vite + TypeScript
+# Calculadora de Propinas - React + Vite + TypeScript + useReducer
 
-Aplicación creada con [React](https://react.dev/) y [Vite](https://vitejs.dev/) usando [TypeScript](https://www.typescriptlang.org/), la cual es una Calculadora de Propinas y Consumos para un Restaurante, puedes realizar una orden en base a los productos listados, eliminarlos de la orden, agregar propina ya sea del 10%, 20% o 50%, ver el subtotal, la propina y el total a pagar. Incluye un botón para colocar la orden (en un futuro se podrá mandar a una base de datos) y al presionarlo se resetea la aplicación.
+Aplicación creada con [React](https://react.dev/) y [Vite](https://vitejs.dev/) usando [TypeScript](https://www.typescriptlang.org/), la cual es una Calculadora de Propinas y Consumos para un Restaurante, puedes realizar una orden en base a los productos listados, eliminarlos de la orden, agregar propina ya sea del 0%, 10%, 20% o 50%, ver el subtotal, la propina y el total a pagar. Incluye un botón para colocar la orden (en un futuro se podrá mandar a una base de datos) y al presionarlo se resetea la aplicación.
 
 Algunos de los conceptos utilizados para la generación de ésta App, son:
 
@@ -22,8 +22,9 @@ Algunos de los conceptos utilizados para la generación de ésta App, son:
 2. Componentes reutilizables.
 3. useEstate.
 4. useMemo.
-5. Hooks personalizados.
-6. TailwindCSS
+5. useReducer.
+6. Hooks personalizados.
+7. TailwindCSS
 8. Y más.
 
 # React + Vite + TypeScript

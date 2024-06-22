@@ -1,17 +1,19 @@
+import { Dispatch } from "react";
 import type { MenuItem } from "../types"
-import { formatCurrency } from '../helpers';
+import { OrderActions } from "../reducers/order-reducer";
+import { formatCurrency } from "../helpers";
 
 type MenuItemProps = {
   item: MenuItem,
-  addItem: (item: MenuItem) => void
+  dispatch: Dispatch<OrderActions>
 }
 
-export default function MenuItems({item, addItem} : MenuItemProps) {
+export default function MenuItem({item, dispatch} : MenuItemProps) {
 
   return (
     <button
       className="border-2 rounded-lg border-teal-400 hover:bg-teal-200 hover:text-white transition-all w-full p-3 flex justify-between"
-      onClick={() => addItem(item)}
+      onClick={() => dispatch({type: "add-item", payload:{item}})}
     >
       <p>{item.name}</p>
       <p className="font-black">{formatCurrency(item.price)}</p>
